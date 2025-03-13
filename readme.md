@@ -19,4 +19,4 @@ Repositori ini berisi berbagai latihan **studi kasus** mulai dari **basic hingga
 ---
 
 💻 Dibuat dengan ❤️ oleh **LangsDev** 🛠️  
-Deymm! 🚀🔥
+Learning by doing! 🚀🔥
