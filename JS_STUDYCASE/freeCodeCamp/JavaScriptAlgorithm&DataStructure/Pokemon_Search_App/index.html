@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pokémon Search App</h1>
+    
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter Pokémon name or ID" required>
+        <button id="search-button">Search</button>
+    </div>
+    
+    <div class="pokemon-container" id="pokemon-result">
+        <div class="pokemon-info">
+            <div class="pokemon-header">
+                <div class="pokemon-basics">
+                    <div id="pokemon-name"></div>
+                    <div id="pokemon-id"></div>
+                </div>
+                <div>
+                    <div id="weight"></div>
+                    <div id="height"></div>
+                </div>
+            </div>
+            
+            <div class="pokemon-image">
+                <!-- sprite will be added here by JavaScript -->
+            </div>
+            
+            <div class="pokemon-details">
+                <div class="detail-column">
+                    <div class="detail-item">
+                        <div class="detail-label">Types</div>
+                        <div id="types"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-label">HP</div>
+                    <div class="stat-value" id="hp"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="hp-bar"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Attack</div>
+                    <div class="stat-value" id="attack"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="attack-bar"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Defense</div>
+                    <div class="stat-value" id="defense"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="defense-bar"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Special Attack</div>
+                    <div class="stat-value" id="special-attack"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="special-attack-bar"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Special Defense</div>
+                    <div class="stat-value" id="special-defense"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="special-defense-bar"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Speed</div>
+                    <div class="stat-value" id="speed"></div>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar" id="speed-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

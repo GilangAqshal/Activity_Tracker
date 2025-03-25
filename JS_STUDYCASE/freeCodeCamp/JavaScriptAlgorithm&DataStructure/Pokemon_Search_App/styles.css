@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #3b5ca8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+    gap: 10px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ffcb05;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-button {
+    background-color: #3b5ca8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #2a4073;
+}
+
+.pokemon-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: none;
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pokemon-basics {
+    display: flex;
+    flex-direction: column;
+}
+
+#pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b5ca8;
+}
+
+#pokemon-id {
+    font-size: 18px;
+    color: #666;
+}
+
+.pokemon-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sprite {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.detail-column {
+    flex: 1;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #3b5ca8;
+    text-transform: uppercase;
+}
+
+.stats-container {
+    width: 100%;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.stat-bar-container {
+    width: 60%;
+    background-color: #e0e0e0;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stat-bar {
+    height: 100%;
+    background-color: #ffcb05;
+}
+
