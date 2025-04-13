@@ -31,7 +31,7 @@ public class Polimorpisme{
       
       Binatang.suara();
       
-      Binatang = KUDA;
+      Binatang = KUUDA;
       Binatang.suara();
       
       Binatang = KUCING;
