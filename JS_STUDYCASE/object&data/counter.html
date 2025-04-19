@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Kategori</title>
+</head>
+<body>
+    <script>
+        function hitungKategori(data) {
+  let hasil = {};
+
+  for (let item of data) {
+    let kategori = item.kategori;
+
+    if (hasil[kategori]) {
+      hasil[kategori] += 1;
+    } else {
+      hasil[kategori] = 1;
+    }
+  }
+
+  return hasil;
+}
+
+// Coba tes
+const data = [
+  { kategori: 'teknologi' },
+  { kategori: 'fashion' },
+  { kategori: 'teknologi' },
+  { kategori: 'kuliner' },
+  { kategori: 'fashion' }
+];
+
+console.log(hitungKategori(data));
+
+    </script>
+    
+</body>
+</html>
