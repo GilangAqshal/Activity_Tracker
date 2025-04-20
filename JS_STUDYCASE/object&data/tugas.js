@@ -5,4 +5,4 @@ let Mahasiswa = {
     ipk: "3.9"
 }
 
-document.writeln(`Nama: ${Mahasiswa.nama} <br> Umur: ${Mahasiswa.age} <br> Jurusan: ${Mahasiswa.jurusan} <br> IPK: ${Mahasiswa.ipk}`)
+console.log(`Nama: ${Mahasiswa.nama} <br> Umur: ${Mahasiswa.age} <br> Jurusan: ${Mahasiswa.jurusan} <br> IPK: ${Mahasiswa.ipk}`)
