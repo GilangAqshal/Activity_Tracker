@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Enkapsulasi;
 
 /**
  *
  * @author gilan
  */
-public class Pintar {
+public class Ujian {
     public static void main(String[] args){
-        Belajar panggil = new Belajar();
         
-        System.out.println("Panggil X: "+panggil.x);
-        System.out.println("Panggil Y: "+panggil.x);
+        int nilai = 80 ;
+        if (nilai > 90 ) {
+            System.out.println("Grade A");
+        }else{
+            System.out.println("Grade B");
+        }
     }
 }
