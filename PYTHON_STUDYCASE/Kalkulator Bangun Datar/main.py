@@ -44,7 +44,7 @@ class AttendanceList:
         current_node = None  # Menghapus referensi
 
     def print_attendance(self):
-        """Mencetak daftar absensi mahasiswa."""
+        """Mencetak daftar absensi Mahasiswa."""
         current_node = self.head
         if not current_node:
             print("Daftar absensi kosong.")
