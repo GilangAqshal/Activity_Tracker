@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistem Peminjaman Buku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistem Peminjaman Buku Perpustakaan</h1>
+
+    <!-- Formulir Input Data Peminjaman -->
+    <form id="formulirPeminjaman">
+      <input type="text" id="namaPeminjam" placeholder="Nama Peminjam" required>
+      <input type="text" id="namaBuku" placeholder="Nama Buku" required>
+      <input type="text" id="pengarang" placeholder="Pengarang" required>
+      <input type="date" id="tanggalPengembalian" required>
+      <button type="submit">Tambah Peminjaman</button>
+    </form>
+
+    <h2>Daftar Peminjaman Buku</h2>
+    <!-- Tabel untuk Menampilkan Data Peminjaman -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Peminjam</th>
+          <th>Nama Buku</th>
+          <th>Pengarang</th>
+          <th>Tanggal Pengembalian</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tubuhTabel"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- SimpulPeminjaman adalah node LinkedList.
+
+DaftarPeminjaman mengelola data peminjaman dengan operasi sisipkan, hapus, dan lihat.
+
+Nama variabel dan fungsi semua dalam bahasa Indonesia.
+
+Formulir untuk menambah data.
+
+Tabel untuk melihat dan menghapus data.
+
+LinkedList otomatis mengurutkan data berdasarkan Tanggal Pengembalian yang paling dek -->

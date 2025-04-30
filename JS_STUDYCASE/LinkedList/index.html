@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistem Peminjaman Buku</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fas fa-book-open"></i>
+        <h1>Sistem Peminjaman Buku Perpustakaan</h1>
+      </div>
+      <p class="subtitle">Kelola peminjaman buku dengan mudah dan efisien</p>
+    </header>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><i class="fas fa-plus-circle"></i> Tambah Peminjaman Baru</h2>
+      </div>
+      <div class="card-body">
+        <form id="formPeminjaman">
+          <div class="form-group">
+            <label for="namaPeminjam"><i class="fas fa-user"></i> Nama Peminjam:</label>
+            <input type="text" id="namaPeminjam" placeholder="Masukkan nama peminjam" required>
+          </div>
+
+          <div class="form-group">
+            <label for="namaBuku"><i class="fas fa-book"></i> Nama Buku:</label>
+            <input type="text" id="namaBuku" placeholder="Masukkan judul buku" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pengarang"><i class="fas fa-pen-fancy"></i> Pengarang:</label>
+            <input type="text" id="pengarang" placeholder="Masukkan nama pengarang" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tanggalPengembalian"><i class="fas fa-calendar-alt"></i> Tanggal Pengembalian:</label>
+            <input type="date" id="tanggalPengembalian" required>
+          </div>
+
+          <button type="submit" class="btn-primary"><i class="fas fa-save"></i> Simpan Peminjaman</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-20">
+      <div class="card-header">
+        <h2><i class="fas fa-list"></i> Daftar Peminjaman</h2>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Cari peminjaman...">
+          <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fas fa-user"></i> Nama Peminjam</th>
+                <th><i class="fas fa-book"></i> Nama Buku</th>
+                <th><i class="fas fa-pen-fancy"></i> Pengarang</th>
+                <th><i class="fas fa-calendar-alt"></i> Tanggal Pengembalian</th>
+                <th><i class="fas fa-cogs"></i> Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="tabelPeminjaman">
+              <!-- Data akan muncul di sini -->
+            </tbody>
+          </table>
+        </div>
+        <div id="emptyMessage" class="empty-message hidden">
+          <i class="fas fa-info-circle"></i> Belum ada data peminjaman.
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Sistem Peminjaman Buku Perpustakaan | Dibuat dengan <i class="fas fa-heart"></i></p>
+    </footer>
+  </div>
+
+  <script src="addBook.js"></script>
+</body>
+</html>
