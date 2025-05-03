@@ -133,7 +133,7 @@ function hapusPeminjaman(id) {
         tampilkanPeminjaman();
       }
       
-      showNotification("Data peminjaman berhasil dihapus", "success");
+      showNotification("Data peminjamann berhasil dihapus", "success");
     }
   }
 }
@@ -210,7 +210,7 @@ function muatDariStorage() {
   }
 }
 
-// Tambahkan CSS untuk notifikasi
+// Tambahkan CSS untuk notifikasiuu
 const notificationStyle = document.createElement('style');
 notificationStyle.textContent = `
   .notification {
