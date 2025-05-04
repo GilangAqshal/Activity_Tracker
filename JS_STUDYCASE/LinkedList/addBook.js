@@ -133,7 +133,7 @@ function hapusPeminjaman(id) {
         tampilkanPeminjaman();
       }
       
-      showNotification("Data peminjamann berhasil dihapus", "success");
+      showNotification("Data peminjaman berhasil dihapus", "success");
     }
   }
 }
