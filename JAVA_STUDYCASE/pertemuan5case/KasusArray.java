@@ -64,8 +64,7 @@ class KasusArray {
             
             System.out.println("TOKO HELM LANGS");
             System.out.println(" ");
-            
-            for (i=1;i<=j;i++){
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                 System.out.println("Data ke - " + i);
                 System.out.println("Jenis Helm : " + jenis[i]);
                 System.out.println("Ukuran : " + ukuran[i]);
@@ -76,7 +75,7 @@ class KasusArray {
                 System.out.println("");
                 }
                 System.out.println("Harga Semuanya adalah " + total);
-            }   
+            }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
          }
     }   
 }
