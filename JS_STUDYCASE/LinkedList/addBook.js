@@ -11,7 +11,7 @@ function updateEmptyMessage() {
   if (dataToCheck.length === 0) {
     emptyMessage.classList.remove("hidden");
     if (isFiltering) {
-      emptyMessage.innerHTML = '<i class="fas fa-info-circle"></i> Tidak ada data peminjaman yang sesuai dengan pencarian.';
+      emptyMessage.innerHTML = '<i class="fas fa-info-circle"></i> Not ada data peminjaman yang sesuai dengan pencarian.';
     } else {
       emptyMessage.innerHTML = '<i class="fas fa-info-circle"></i> Belum ada data peminjaman.';
     }
