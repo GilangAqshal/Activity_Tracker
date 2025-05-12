@@ -7,7 +7,7 @@ let isFiltering = false;
 function updateEmptyMessage() {
   const emptyMessage = document.getElementById("emptyMessage");
   const dataToCheck = isFiltering ? filteredPeminjaman : daftarPeminjaman;
-  
+
   if (dataToCheck.length === 0) {
     emptyMessage.classList.remove("hidden");
     if (isFiltering) {
