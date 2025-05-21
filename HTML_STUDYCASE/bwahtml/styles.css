@@ -1,0 +1,45 @@
+.header{
+    background: #b1b1b1b1;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 50px; /* jarak antara item dan didalam item*/
+    margin-bottom: 100px; /* jarak antara item dan item lain */
+    
+}
+/*  */
+.body{
+    margin: 0;
+}
+
+.header .logo{
+    float: left;
+    font-family: Carter One;
+}
+
+.header .container{
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+.header .navigation li{
+    float: right;
+    margin-left: 20px;
+    font-size: 19px;
+    display: block;
+}
+
+.header .navigation li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header .navigation li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.carter-one-regular {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
